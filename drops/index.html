@@ -15,11 +15,13 @@
 </canvas>
 
 <script type="text/javascript">
-    var world = new DropsWorld("drops")
-    world.start()
+    var world = new DropsWorld("drops");
+    world.start();
+    setInterval(function() { world.poke(); }, 250);
 </script>
 
 <div>
+	<button onclick="javascript:world.start()">START!</button>
 	<button onclick="javascript:world.stop()">STOP!</button>
 	<button onclick="javascript:world.poke()">POKE!</button>
 </div>
