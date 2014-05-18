@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JS Physics</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>JS Physics</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 <body>
 
 <div id="canvas">
 </div>
 
-<script type="text/javascript" src="js-physics-opt.js"></script>
+<script type="text/javascript" src="js-droplets-opt.js"></script>
 
 <canvas id="drops" height="600" width="800" style="border: 1px solid #999">
 </canvas>
@@ -23,6 +23,7 @@
     setInterval(function() {
       setTimeout(function() { world.poke(); }, Math.random() * (autoInterval * clutter));
     }, autoInterval);
+
 </script>
 
 <div>
@@ -33,11 +34,13 @@
 <hr/>
 <div>
 	<h2>OK, so there's some droppy things. So What?</h2>
+
 	<p>
-		First, I've never done anything like this before, and it was fun.  Second, I wrote 
-		<a href="https://github.com/kender/jsphysics">this code</a> in <a href="http://scala-lang.org/">scala</a>
+		First, I've never done anything like this before, and it was fun. Second, I wrote
+		<a href="https://github.com/kender/js-droplets">this code</a> in <a href="http://scala-lang.org/">scala</a>
 		using <a href="http://www.scala-js.org/">scala-js</a>.
 	</p>
+
 	<p>
 		That's what! =D
 	</p>
