@@ -17,19 +17,13 @@
 <script type="text/javascript">
     var world = new DropsWorld("drops");
     world.start();
-
-    var autoInterval = 150;
-    var clutter = 4;
-    setInterval(function() {
-      setTimeout(function() { world.poke(); }, Math.random() * (autoInterval * clutter));
-    }, autoInterval);
-
+    world.startRaining(150, 4);
 </script>
 
 <div>
 	<button onclick="javascript:world.start()">START!</button>
 	<button onclick="javascript:world.stop()">STOP!</button>
-	<button onclick="javascript:world.poke()">POKE!</button>
+	<button onclick="javascript:world.createDrop()">DRIP!</button>
 </div>
 <hr/>
 <div>
